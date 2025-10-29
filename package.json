@@ -1,6 +1,6 @@
 {
     "name": "@hualvwang/n8n-nodes-k8s",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "n8n custom node for kubernetes",
     "license": "MIT",
     "homepage": "",
