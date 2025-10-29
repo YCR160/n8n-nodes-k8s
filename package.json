@@ -1,0 +1,65 @@
+{
+    "name": "@hualvwang/n8n-nodes-k8s",
+    "version": "0.1.0",
+    "description": "n8n custom node for kubernetes",
+    "license": "MIT",
+    "homepage": "",
+    "keywords": [
+        "n8n-community-node-package",
+        "kubernetes",
+        "k8s"
+    ],
+    "author": {
+        "name": "laoshancun",
+        "email": "laoshancun@foxmail.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/laoshancun/n8n-nodes-k8s.git"
+    },
+    "scripts": {
+        "build": "n8n-node build",
+        "build:watch": "tsc --watch",
+        "dev": "n8n-node dev --external-n8n",
+        "lint": "n8n-node lint",
+        "lint:fix": "n8n-node lint --fix",
+        "release": "n8n-node release",
+        "prepublishOnly": "n8n-node prerelease"
+    },
+    "files": [
+        "dist"
+    ],
+    "n8n": {
+        "n8nNodesApiVersion": 1,
+        "strict": true,
+        "credentials": [
+            "dist/nodes/credentials/KubernetesCredentialsApi.credentials.js"
+        ],
+        "nodes": [
+            "dist/nodes/Kubernetes/Kubernetes.node.js"
+        ]
+    },
+    "devDependencies": {
+        "@n8n/node-cli": "*",
+        "@types/ts-nameof": "^4.2.5",
+        "change-case": "^4.1.2",
+        "eslint": "9.32.0",
+        "prettier": "3.6.2",
+        "release-it": "^19.0.4",
+        "typescript": "5.9.2"
+    },
+    "peerDependencies": {
+        "n8n-workflow": "*"
+    },
+    "dependencies": {
+        "@kubernetes/client-node": "^1.4.0",
+        "ts-nameof": "^5.0.0"
+    },
+    "overrides": {
+        "change-case": "^4.1.2"
+    },
+    "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.org/"
+    }
+}
