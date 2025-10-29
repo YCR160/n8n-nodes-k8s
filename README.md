@@ -1,4 +1,4 @@
-# @hualv/n8n-nodes-k8s
+# @hualvwang/n8n-nodes-k8s
 
 This is an n8n community node. It lets you use _app/service name_ in your n8n workflows.
 
