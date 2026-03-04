@@ -98,7 +98,7 @@ export class Kubernetes implements INodeType {
 				default: '[]',
 				displayOptions: {
 					show: {
-						operation: ['run'],
+						operation: ['run', 'exec'],
 					},
 				},
 			},
@@ -109,7 +109,7 @@ export class Kubernetes implements INodeType {
 				default: '[]',
 				displayOptions: {
 					show: {
-						operation: ['run'],
+						operation: ['run', 'exec'],
 					},
 				},
 			},
